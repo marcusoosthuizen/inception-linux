@@ -23,7 +23,7 @@ for i in bin lib sbin; do
   ln -sv usr/$i $LFS/$i
 done
 
-if ! test -f $(id -u lfs) ; then
+if ! test $(id -u lfs) ; then
     echo "Creating Build User"
     groupadd lfs
     useradd -s /bin/bash -g lfs -m -k /dev/null lfs
@@ -34,28 +34,29 @@ if ! test -f $(id -u lfs) ; then
 
     home=$(eval echo "~lfs")
 
-    cat > $home/.bash_profile << "EOF"
-    exec env -i HOME=$HOME TERM=$TERM PS1='\u:\w\$ ' /bin/bash
-    EOF
+cat > $home/.bash_profile << "EOF"
+exec env -i HOME=$HOME TERM=$TERM PS1='\u:\w\$ ' /bin/bash
+EOF
 
-    cat > $home/.bashrc << EOF
-    set +h
-    umask 022
-    LFS=$LFS
-    DIST_ROOT=$DIST_ROOT
-    EOF
+cat > $home/.bashrc << EOF
+set +h
+umask 022
+LFS=$LFS
+DIST_ROOT=$DIST_ROOT
+EOF
 
-    cat >> $home/.bashrc << "EOF"
-    set +h
-    umask 022
-    LFS=/mnt/lfs
-    LC_ALL=POSIX
-    LFS_TGT=$(uname -m)-lfs-linux-gnu
-    PATH=/usr/bin
-    if [ ! -L /bin ]; then PATH=/bin:$PATH; fi
-    PATH=$LFS/tools/bin:$PATH
-    CONFIG_SITE=$LFS/usr/share/config.site
-    export LFS LC_ALL LFS_TGT PATH CONFIG_SITE
-    export MAKEFLAGS="-j$(nproc)"
-    EOF
+cat >> $home/.bashrc << "EOF"
+set +h
+umask 022
+LFS=/mnt/lfs
+LC_ALL=POSIX
+LFS_TGT=$(uname -m)-lfs-linux-gnu
+PATH=/usr/bin
+if [ ! -L /bin ]; then PATH=/bin:$PATH; fi
+PATH=$LFS/tools/bin:$PATH
+CONFIG_SITE=$LFS/usr/share/config.site
+export LFS LC_ALL LFS_TGT PATH CONFIG_SITE
+export MAKEFLAGS="-j$(nproc)"
+EOF
+
 fi
