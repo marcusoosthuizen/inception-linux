@@ -42,13 +42,12 @@ cat > $home/.bashrc << EOF
 set +h
 umask 022
 LFS=$LFS
-DIST_ROOT=$DIST_ROOT
+export DIST_ROOT=$DIST_ROOT
 EOF
 
 cat >> $home/.bashrc << "EOF"
 set +h
 umask 022
-LFS=/mnt/lfs
 LC_ALL=POSIX
 LFS_TGT=$(uname -m)-lfs-linux-gnu
 PATH=/usr/bin
