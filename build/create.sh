@@ -1,3 +1,5 @@
+set -e
+
 echo "DIST_ROOT: ${DIST_ROOT:?}"
 echo "LFS: ${LFS:?}"
 
@@ -11,3 +13,4 @@ cd $DIST_ROOT/build
 
 bash -e build-scripts/binutils-pass-1.sh
 bash -e build-scripts/gcc-pass-1.sh
+bash -e build-scripts/linux-headers.sh
