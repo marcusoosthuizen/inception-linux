@@ -15,3 +15,4 @@ bash -e build-scripts/binutils-pass-1.sh
 bash -e build-scripts/gcc-pass-1.sh
 bash -e build-scripts/linux-headers.sh
 bash -e build-scripts/glibc.sh
+bash -e build-scripts/libstdcpp.sh
