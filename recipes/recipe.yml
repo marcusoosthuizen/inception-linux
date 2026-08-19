@@ -29,9 +29,13 @@ modules:
         - hyprland-guiutils
         - ghostty
         - dms
-        - plasma-discover
-        - dolphin
         - PackageKit
+        - plasma-discover-flatpak
+        - plasma-discover-notifier
+        - plasma-discover-packagekit
+        - plasma-discover-rpm-ostree
+        - dolphin
+        - qt6ct
     remove:
       packages:
         # example: removing firefox (in favor of the flatpak)
