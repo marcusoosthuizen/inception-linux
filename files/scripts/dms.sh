@@ -6,5 +6,5 @@
 set -oue pipefail
 
 # Your code goes here.
-sudo -v && curl -fsSL https://install.danklinux.com | sh -s -- \
-  -c hyprland -t kitty --include-deps dms-greeter --replace-configs-all -y
+dms setup
+systemctl --user enable dms

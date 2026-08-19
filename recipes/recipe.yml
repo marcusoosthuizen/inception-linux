@@ -20,11 +20,14 @@ modules:
   - type: dnf
     repos:
       copr:
-        - atim/starship
+        - solopasha/hyprland
+        - avengemedia/danklinux
+        - avengemedia/dms
     install:
       packages:
-        - micro
-        - starship
+        - hyprland
+        - foot
+        - dms
     remove:
       packages:
         # example: removing firefox (in favor of the flatpak)
@@ -41,7 +44,7 @@ modules:
           - org.mozilla.firefox
           - org.gnome.Loupe
       - scope: user # Also add Flathub user repo, but no user packages
-  
+
   - type: script
     scripts:
       - dms.sh
