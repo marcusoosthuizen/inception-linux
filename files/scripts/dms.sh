@@ -6,5 +6,4 @@
 set -oue pipefail
 
 # Your code goes here.
-dms setup
-systemctl --user enable dms
+systemctl --user add-wants hyprland-session.target dms
