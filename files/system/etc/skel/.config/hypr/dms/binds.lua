@@ -11,6 +11,7 @@ hl.bind("SUPER + N", hl.dsp.exec_cmd("dms ipc call notifications toggle"))
 hl.bind("SUPER + TAB", hl.dsp.exec_cmd("dms ipc call hypr toggleOverview"))
 hl.bind("SUPER + X", hl.dsp.exec_cmd("dms ipc call powermenu toggle"))
 
+hl.bind("SUPER + E", hl.dsp.exec_cmd("dolphin"))
 -- === Cheat sheet
 hl.bind("SUPER + SHIFT + Slash", hl.dsp.exec_cmd("dms ipc call keybinds toggle hyprland"))
 
