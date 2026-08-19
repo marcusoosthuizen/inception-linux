@@ -1,11 +1,11 @@
 -- DMS default keybinds (Hyprland 0.55+ Lua)
 
 -- === Application Launchers ===
-hl.bind("SUPER + return", hl.dsp.exec_cmd("ghostty"))
+hl.bind("SUPER + return", hl.dsp.exec_cmd("kitty"))
 hl.bind("SUPER + space", hl.dsp.exec_cmd("dms ipc call spotlight toggle"))
 hl.bind("ALT + space", hl.dsp.exec_cmd("dms ipc call spotlight-bar toggle"))
 hl.bind("SUPER + V", hl.dsp.exec_cmd("dms ipc call clipboard toggle"))
-hl.bind("SUPER + M", hl.dsp.exec_cmd("dms ipc call processlist focusOrToggle")
+hl.bind("SUPER + M", hl.dsp.exec_cmd("dms ipc call processlist focusOrToggle"))
 hl.bind("SUPER + comma", hl.dsp.exec_cmd("dms ipc call settings focusOrToggle"))
 hl.bind("SUPER + N", hl.dsp.exec_cmd("dms ipc call notifications toggle"))
 hl.bind("SUPER + TAB", hl.dsp.exec_cmd("dms ipc call hypr toggleOverview"))
