@@ -20,7 +20,7 @@ modules:
   - type: dnf
     repos:
       copr:
-        - solopasha/hyprland
+        - lionheartp/hyprland
         - avengemedia/danklinux
         - avengemedia/dms
     install:
