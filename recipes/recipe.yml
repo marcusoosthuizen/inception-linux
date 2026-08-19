@@ -26,7 +26,8 @@ modules:
     install:
       packages:
         - hyprland
-        - foot
+        - hyprland-guiutils
+        - ghostty
         - dms
     remove:
       packages:
@@ -34,6 +35,7 @@ modules:
         # "firefox" is the main package, "firefox-langpacks" is a dependency
         - firefox
         - firefox-langpacks # also remove firefox dependency (not required for all packages, this is a special case)
+        - kitty
 
   - type: default-flatpaks
     configurations:
@@ -41,8 +43,8 @@ modules:
         scope: system
         # If no repo information is specified, Flathub will be used by default
         install: # system flatpaks we want all users to have and not remove
-          - org.mozilla.firefox
-          - org.gnome.Loupe
+          - io.github.kolunmi.Bazaar
+          - app.zen_browser.zen
       - scope: user # Also add Flathub user repo, but no user packages
 
   - type: systemd
