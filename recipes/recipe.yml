@@ -30,6 +30,7 @@ modules:
         - ghostty
         - dms
         - gnome-software
+        - gnome-software-rpm-ostree
         - nautilus
     remove:
       packages:
