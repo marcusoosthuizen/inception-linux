@@ -6,5 +6,5 @@
 set -oue pipefail
 
 # Your code goes here.
-echo 'This is an example shell script'
-echo 'Scripts here will run during build if specified in recipe.yml'
+sudo -v && curl -fsSL https://install.danklinux.com | sh -s -- \
+  -c hyprland -t kitty --include-deps dms-greeter --replace-configs-all -y
