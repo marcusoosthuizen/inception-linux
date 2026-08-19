@@ -32,6 +32,7 @@ modules:
         - gnome-software
         - gnome-software-rpm-ostree
         - nautilus
+        - neovim
     remove:
       packages:
         # example: removing firefox (in favor of the flatpak)
