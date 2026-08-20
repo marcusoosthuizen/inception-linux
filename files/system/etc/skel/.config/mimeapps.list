@@ -1,0 +1,44 @@
+[Default Applications]
+application/json=nvim.desktop
+application/pdf=app.zen_browser.zen.desktop
+application/vnd.comicbook+zip=app.zen_browser.zen.desktop
+application/vnd.comicbook-rar=app.zen_browser.zen.desktop
+application/x-bzpdf=app.zen_browser.zen.desktop
+application/x-ext-pdf=app.zen_browser.zen.desktop
+application/x-gzpdf=app.zen_browser.zen.desktop
+application/x-zerosize=nvim.desktop
+application/xhtml+xml=app.zen_browser.zen.desktop
+text/html=app.zen_browser.zen.desktop
+text/markdown=nvim.desktop
+text/plain=nvim.desktop
+text/x-c++src=nvim.desktop
+text/x-csrc=nvim.desktop
+text/x-python=nvim.desktop
+text/x-shellscript=nvim.desktop
+x-scheme-handler/http=app.zen_browser.zen.desktop
+x-scheme-handler/https=app.zen_browser.zen.desktop
+x-scheme-handler/mailto=app.zen_browser.zen.desktop
+
+[Added Associations]
+application/json=nvim.desktop;
+application/pdf=app.zen_browser.zen.desktop;
+application/vnd.comicbook+zip=app.zen_browser.zen.desktop;
+application/vnd.comicbook-rar=app.zen_browser.zen.desktop;
+application/x-bzpdf=app.zen_browser.zen.desktop;
+application/x-ext-pdf=app.zen_browser.zen.desktop;
+application/x-gzpdf=app.zen_browser.zen.desktop;
+application/x-zerosize=nvim.desktop;
+application/xhtml+xml=app.zen_browser.zen.desktop;
+text/html=app.zen_browser.zen.desktop;
+text/markdown=nvim.desktop;
+text/plain=nvim.desktop;
+text/x-c++src=nvim.desktop;
+text/x-csrc=nvim.desktop;
+text/x-python=nvim.desktop;
+text/x-shellscript=nvim.desktop;
+x-scheme-handler/http=app.zen_browser.zen.desktop;
+x-scheme-handler/https=app.zen_browser.zen.desktop;
+x-scheme-handler/mailto=app.zen_browser.zen.desktop;
+
+[Removed Associations]
+
