@@ -3,7 +3,7 @@
   "doNotDisturb": false,
   "doNotDisturbUntil": 0,
   "terminalOverride": "",
-  "wallpaperPath": "/etcshar/wallpaper.png",
+  "wallpaperPath": "/etc/wallpaper.png",
   "perMonitorWallpaper": false,
   "monitorWallpapers": {},
   "perModeWallpaper": false,
