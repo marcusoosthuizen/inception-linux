@@ -10,3 +10,8 @@ systemctl --user add-wants hyprland-session.target dms
 
 # changing default shell to zsh
 sudo sed -i "s|^SHELL=.*|SHELL=/usr/bin/zsh|" /etc/default/useradd
+
+# remove default bash configs
+rm /etc/skel/.bash_logout
+rm /etc/skel/.bash_profile
+rm /etc/skel/.bashrc
