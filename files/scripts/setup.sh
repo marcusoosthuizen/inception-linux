@@ -7,3 +7,7 @@ set -oue pipefail
 
 # Your code goes here.
 systemctl --user add-wants hyprland-session.target dms
+
+# changing default shell to zsh
+NEW_SHELL=$(which zsh)
+sudo sed -i "s|^SHELL=.*|SHELL=$NEW_SHELL|" /etc/default/useradd
