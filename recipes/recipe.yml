@@ -64,4 +64,17 @@ modules:
     scripts:
       - setup.sh
 
+  - type: os-release
+    properties:
+      DEFAULT_HOSTNAME: inception
+      VARIANT_LIKE: fedora
+      ID: inception
+      ID_LIKE: fedora
+      PRETTY_NAME: Inception Linux (powered by Fedora Atomic)
+      NAME: Inception Linux
+      HOME_URL: https://github.com/marcusoosthuizen/inception-linux
+      LOGO: cachyos
+
+
+
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
