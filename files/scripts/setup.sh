@@ -9,5 +9,4 @@ set -oue pipefail
 systemctl --user add-wants hyprland-session.target dms
 
 # changing default shell to zsh
-NEW_SHELL=$(which zsh)
-sudo sed -i "s|^SHELL=.*|SHELL=$NEW_SHELL|" /etc/default/useradd
+sudo sed -i "s|^SHELL=.*|SHELL=/usr/bin/zsh|" /etc/default/useradd
