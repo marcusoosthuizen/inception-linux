@@ -35,6 +35,8 @@ modules:
         - nautilus
         - neovim
         - zsh
+
+  - type: dnf
     remove:
       packages:
         # example: removing firefox (in favor of the flatpak)
@@ -75,9 +77,6 @@ modules:
       HOME_URL: https://github.com/marcusoosthuizen/inception-linux
       LOGO: cachyos
 
-  - type: files
-    files:
-      - source: plymouth
-        destination: /usr/share/plymouth
+  - type: initramfs
 
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
