@@ -29,6 +29,7 @@ modules:
         - hyprland-guiutils
         - ghostty
         - dms
+        - dms-greeter
         - gnome-software
         - gnome-software-rpm-ostree
         - nautilus
